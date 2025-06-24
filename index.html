@@ -1,663 +1,1108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Syolo Travel</title>
     <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
     <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
     <!-- custom css -->
-     <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img src="images/logo.png" class="logo-img" alt="logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#destinations">International</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#domestic">Domestic</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#testimonials">Reviews</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="images/logo.png" class="logo-img" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#destinations">International</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#domestic">Domestic</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <h1>Explore the World <br> with Syolo</h1>
-                    <p>Discover amazing destinations, create unforgettable memories, 
-                        and experience the adventure of a lifetime
-                        with our expertly crafted travel packages.</p>
-                    <a href="#destinations" class="btn btn-primary btn-lg">Start Your Journey</a>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h1>
+              Explore the World <br />
+              with Syolo
+            </h1>
+            <p>
+              Discover amazing destinations, create unforgettable memories, and
+              experience the adventure of a lifetime with our expertly crafted
+              travel packages.
+            </p>
+            <a href="#destinations" class="btn btn-primary btn-lg"
+              >Start Your Journey</a
+            >
+          </div>
+          <div class="col-lg-4 px-4">
+            <form id="myform" class="my-3">
+              <div class="row">
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your Name"
+                    required
+                  />
                 </div>
-                <div class="col-lg-4 px-4">
-                    <form class="my-3">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Your Name" required>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="email" class="form-control" placeholder="Your Email" required>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <input type="number" class="form-control" placeholder="Phone no" required>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="date" class="form-control" placeholder="Date" required>
-                            </div>
-                        </div> 
-                        <!-- <input type="text" class="form-control" placeholder="Subject" required> -->
-                         <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
+                <div class="col-md-6">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Your Email"
+                    required
+                  />
                 </div>
-            </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder="Phone no"
+                    inputmode="numeric"
+                    maxlength="10"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="date"
+                    class="form-control"
+                    placeholder="Date"
+                    required
+                  />
+                </div>
+              </div>
+              <!-- <input type="text" class="form-control" placeholder="Subject" required> -->
+              <textarea
+                class="form-control"
+                rows="5"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Services Section -->
     <section id="services" class="section-padding services">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our <span style="color: #FF6B35;">Services</span> </h2>
-                <p>We provide comprehensive travel services to make your journey seamless and memorable</p>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-plane"></i>
-                        </div>
-                        <h4>International Tours</h4>
-                        <p>Customized itineraries tailored to your preferences, budget, and travel style for the perfect vacation experience.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-map-marked-alt"></i>
-                        </div>
-                        <h4>Domestic Tours</h4>
-                        <p>Best flight deals, flexible booking options, and 24/7 support for all your air travel needs.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-hotel"></i>
-                        </div>
-                        <h4>Hotel Booking</h4>
-                        <p>Access to exclusive deals on luxury hotels, boutique accommodations, and budget-friendly options worldwide.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-car"></i>
-                        </div>
-                        <h4>Transportation</h4>
-                        <p>Reliable ground transportation including car rentals, airport transfers, and guided tours.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-umbrella-beach"></i>
-                        </div>
-                        <h4>Activities & Tours</h4>
-                        <p>Exciting excursions, cultural experiences, and adventure activities to enhance your travel experience.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-headset"></i>
-                        </div>
-                        <h4>24/7 Support</h4>
-                        <p>Round-the-clock customer support to assist you before, during, and after your travels.</p>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-title">
+          <h2>Our <span style="color: #ff6b35">Services</span></h2>
+          <p>
+            We provide comprehensive travel services to make your journey
+            seamless and memorable
+          </p>
         </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-plane"></i>
+              </div>
+              <h4>International Tours</h4>
+              <p>
+                Customized itineraries tailored to your preferences, budget, and
+                travel style for the perfect vacation experience.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-map-marked-alt"></i>
+              </div>
+              <h4>Domestic Tours</h4>
+              <p>
+                Best flight deals, flexible booking options, and 24/7 support
+                for all your air travel needs.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-hotel"></i>
+              </div>
+              <h4>Hotel Booking</h4>
+              <p>
+                Access to exclusive deals on luxury hotels, boutique
+                accommodations, and budget-friendly options worldwide.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-car"></i>
+              </div>
+              <h4>Transportation</h4>
+              <p>
+                Reliable ground transportation including car rentals, airport
+                transfers, and guided tours.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-umbrella-beach"></i>
+              </div>
+              <h4>Activities & Tours</h4>
+              <p>
+                Exciting excursions, cultural experiences, and adventure
+                activities to enhance your travel experience.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-headset"></i>
+              </div>
+              <h4>24/7 Support</h4>
+              <p>
+                Round-the-clock customer support to assist you before, during,
+                and after your travels.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-
     <!-- Domestic Tours Section -->
-     <section class="tour-section" id="domestic">
-        <div class="container">
-            <div class="section-title">
-                <h2>Explore <span style="color: #FF6B35;">Domestic</span> Tours</h2>
-                <p>Discover the wonders of our beautiful country with our carefully curated domestic tours. From sun-kissed beaches to majestic mountains, we have adventures for every traveler.</p>
-            </div>
-            
-            <div class="row">
-                <!-- Tour 1 -->
-                 <div class="col-lg-4 col-md-6 mb-3">
-                    <div class="tour-card">
-                        <div class="tour-img">
-                            <img src="images/kashmir5.jpg" alt="Kashmir Tour">
-                            <div class="days-tag">3N/4D</div>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <span>4.8</span>
-                            </div>
-                        </div>
-                        <div class="tour-content">
-                            <h3>Kashmir Tour</h3>
-                            <p>Nestled in the Himalayas, Kashmir offers breathtaking landscapes, from the serene Dal Lake in Srinagar to the snow-capped peaks of Gulmarg and the lush valleys of Pahalgam.</p>
-                            <!-- <div class="tour-meta">
+    <section class="tour-section" id="domestic">
+      <div class="container">
+        <div class="section-title">
+          <h2>Explore <span style="color: #ff6b35">Domestic</span> Tours</h2>
+          <p>
+            Discover the wonders of our beautiful country with our carefully
+            curated domestic tours. From sun-kissed beaches to majestic
+            mountains, we have adventures for every traveler.
+          </p>
+        </div>
+
+        <div class="row">
+          <!-- Tour 1 -->
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="tour-card">
+              <div class="tour-img">
+                <img src="images/kashmir5.jpg" alt="Kashmir Tour" />
+                <div class="days-tag">3N/4D</div>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <span>4.8</span>
+                </div>
+              </div>
+              <div class="tour-content">
+                <h3>Kashmir Tour</h3>
+                <p>
+                  Nestled in the Himalayas, Kashmir offers breathtaking
+                  landscapes, from the serene Dal Lake in Srinagar to the
+                  snow-capped peaks of Gulmarg and the lush valleys of Pahalgam.
+                </p>
+                <!-- <div class="tour-meta">
                                 <span class="duration"><i class="fas fa-calendar-alt"></i> 5 Days</span>
                                 <span class="location"><i class="fas fa-map-marker-alt"></i> West Coast</span>
                             </div> -->
-                        </div>
-                    </div>
-                </div> 
-                
-                <!-- Tour 2 -->
-                 <div class="col-lg-4 col-md-6 mb-3">
-                    <div class="tour-card special-tour"> 
-                        <!-- <div class="special-tag">Popular</div> -->
-                        <div class="tour-img">
-                            <img src="images/ladakh1.jpg" alt="Ladakh">
-                            <div class="days-tag">4N/5D</div>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <span>4.9</span>
-                            </div>
-                        </div>
-                        <div class="tour-content">
-                            <h3>Ladakh Tour</h3>
-                            <p>Embark on an unforgettable adventure with our exclusive Ladakh tour packages, designed to showcase the rugged beauty of India’s high-altitude desert.</p>
-                            <!-- <div class="tour-meta">
+              </div>
+            </div>
+          </div>
+
+          <!-- Tour 2 -->
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="tour-card special-tour">
+              <!-- <div class="special-tag">Popular</div> -->
+              <div class="tour-img">
+                <img src="images/ladakh1.jpg" alt="Ladakh" />
+                <div class="days-tag">4N/5D</div>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <span>4.9</span>
+                </div>
+              </div>
+              <div class="tour-content">
+                <h3>Ladakh Tour</h3>
+                <p>
+                  Embark on an unforgettable adventure with our exclusive Ladakh
+                  tour packages, designed to showcase the rugged beauty of
+                  India’s high-altitude desert.
+                </p>
+                <!-- <div class="tour-meta">
                                 <span class="duration"><i class="fas fa-calendar-alt"></i> 7 Days</span>
                                 <span class="location"><i class="fas fa-map-marker-alt"></i> Northern Range</span>
                             </div> -->
-                        </div>
-                    </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tour 3 -->
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="tour-card">
+              <div class="tour-img">
+                <img src="images/goa1.jpg" alt="Goa Tour" />
+                <div class="days-tag">2N/3D</div>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <span>4.7</span>
                 </div>
-                
-                <!-- Tour 3 -->
-                <div class="col-lg-4 col-md-6 mb-3">
-                    <div class="tour-card">
-                        <div class="tour-img">
-                            <img src="images/goa1.jpg" alt="Goa Tour">
-                            <div class="days-tag">2N/3D</div>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <span>4.7</span>
-                            </div>
-                        </div>
-                        <div class="tour-content">
-                            <h3>Goa Tour</h3>
-                            <p>From the golden sands of Baga and Anjuna beaches to the historic allure of Old Goa’s churches and spice plantations, our itineraries offer the perfect blend of sun, culture, and nightlife.</p>
-                            <!-- <div class="tour-meta">
+              </div>
+              <div class="tour-content">
+                <h3>Goa Tour</h3>
+                <p>
+                  From the golden sands of Baga and Anjuna beaches to the
+                  historic allure of Old Goa’s churches and spice plantations,
+                  our itineraries offer the perfect blend of sun, culture, and
+                  nightlife.
+                </p>
+                <!-- <div class="tour-meta">
                                 <span class="duration"><i class="fas fa-calendar-alt"></i> 3 Days</span>
                                 <span class="location"><i class="fas fa-map-marker-alt"></i> Historic City</span>
                             </div> -->
-                        </div>
-                    </div>
+              </div>
+            </div>
+          </div>
+          <!-- </div>  -->
+
+          <!-- Second Row -->
+          <!-- <div class="row mt-4"> -->
+          <!-- Tour 4 -->
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="tour-card">
+              <div class="tour-img">
+                <img src="images/himachal2.jpg" alt="Himachal" />
+                <div class="days-tag">4N/5D</div>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <span>4.6</span>
                 </div>
-            </div> 
-            
-            <!-- Second Row -->
-            <div class="row mt-4">
-                <!-- Tour 4 -->
-                <div class="col-lg-4 col-md-6 mb-3">
-                    <div class="tour-card">
-                        <div class="tour-img">
-                            <img src="images/himachal2.jpg" alt="Himachal">
-                            <div class="days-tag">4N/5D</div>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <span>4.6</span>
-                            </div>
-                        </div>
-                        <div class="tour-content">
-                            <h3>Himachal Tour</h3>
-                            <p> From the charming hill stations of Shimla and Manali to the serene valleys of Kullu and the spiritual aura of Dharamshala, our itineraries offer breathtaking views, adventure, and cultural immersion.</p>
-                            <!-- <div class="tour-meta">
+              </div>
+              <div class="tour-content">
+                <h3>Himachal Tour</h3>
+                <p>
+                  From the charming hill stations of Shimla and Manali to the
+                  serene valleys of Kullu and the spiritual aura of Dharamshala,
+                  our itineraries offer breathtaking views, adventure, and
+                  cultural immersion.
+                </p>
+                <!-- <div class="tour-meta">
                                 <span class="duration"><i class="fas fa-calendar-alt"></i> 4 Days</span>
                                 <span class="location"><i class="fas fa-map-marker-alt"></i> National Park</span>
                             </div> -->
-                        </div>
-                    </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tour 5 -->
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="tour-card">
+              <div class="tour-img">
+                <img src="images/andaman1.jpg" alt="Andaman" />
+                <div class="days-tag">3N/4D</div>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <span>4.9</span>
                 </div>
-                
-                <!-- Tour 5 -->
-                <div class="col-lg-4 col-md-6 mb-3">
-                    <div class="tour-card">
-                        <div class="tour-img">
-                            <img src="images/andaman1.jpg" alt="Andaman">
-                            <div class="days-tag">3N/4D</div>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <span>4.9</span>
-                            </div>
-                        </div>
-                        <div class="tour-content">
-                            <h3>Andaman Tour</h3>
-                            <p>From the crystal-clear waters of Havelock’s Radhanagar Beach to the historic Cellular Jail in Port Blair, our itineraries blend adventure, history, and relaxation.</p>
-                            <!-- <div class="tour-meta">
+              </div>
+              <div class="tour-content">
+                <h3>Andaman Tour</h3>
+                <p>
+                  From the crystal-clear waters of Havelock’s Radhanagar Beach
+                  to the historic Cellular Jail in Port Blair, our itineraries
+                  blend adventure, history, and relaxation.
+                </p>
+                <!-- <div class="tour-meta">
                                 <span class="duration"><i class="fas fa-calendar-alt"></i> 6 Days</span>
                                 <span class="location"><i class="fas fa-map-marker-alt"></i> Archipelago</span>
                             </div> -->
-                        </div>
-                    </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tour 6 -->
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="tour-card special-tour">
+              <!-- <div class="special-tag">New</div> -->
+              <div class="tour-img">
+                <img src="images/uttarakhand.jpg" alt="Uttrakhand" />
+                <div class="days-tag">2N/3D</div>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <span>4.5</span>
                 </div>
-                
-                <!-- Tour 6 -->
-                <div class="col-lg-4 col-md-6 mb-3">
-                    <div class="tour-card special-tour">
-                        <!-- <div class="special-tag">New</div> -->
-                         <div class="tour-img">
-                            <img src="images/uttarakhand.jpg" alt="Uttrakhand">
-                            <div class="days-tag">2N/3D</div>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <span>4.5</span>
-                            </div>
-                        </div>
-                        <div class="tour-content">
-                            <h3>Uttrakhand Tour</h3>
-                            <p>From the sacred ghats of Rishikesh and Haridwar to the picturesque hill stations of Mussoorie and Nainital, our itineraries offer a perfect blend of adventure, serenity, and culture.</p>
-                            <!-- <div class="tour-meta">
+              </div>
+              <div class="tour-content">
+                <h3>Uttrakhand Tour</h3>
+                <p>
+                  From the sacred ghats of Rishikesh and Haridwar to the
+                  picturesque hill stations of Mussoorie and Nainital, our
+                  itineraries offer a perfect blend of adventure, serenity, and
+                  culture.
+                </p>
+                <!-- <div class="tour-meta">
                                 <span class="duration"><i class="fas fa-calendar-alt"></i> 2 Days</span>
                                 <span class="location"><i class="fas fa-map-marker-alt"></i> Food Capital</span>
                                 
                             </div> -->
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Benefits Section -->
     <section class="benefits section-padding">
-        <div class="container">
-            <div class="section-title">
-                <h2>Why<span style="color: #FF6B35;"> Choose </span> Syolo?</h2>
-                <p>Experience the difference with our premium travel services and unmatched customer care</p>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="benefit-item">
-                        <div class="benefit-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <div>
-                            <h5>Safe & Secure</h5>
-                            <p>Your safety is our priority with comprehensive travel insurance and secure booking systems.</p>
-                        </div>
-                    </div>
-                    <div class="benefit-item">
-                        <div class="benefit-icon">
-                            <i class="fas fa-dollar-sign"></i>
-                        </div>
-                        <div>
-                            <h5>Affordable Packages</h5>
-                            <p>We offer competitive prices and will match any lower price you find elsewhere.</p>
-                        </div>
-                    </div>
-                    <div class="benefit-item">
-                        <div class="benefit-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <div>
-                            <h5>Expert Guidance</h5>
-                            <p>Our experienced travel consultants provide personalized recommendations and insider tips.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="benefit-item">
-                        <div class="benefit-icon">
-                            <i class="fas fa-leaf"></i>
-                        </div>
-                        <div>
-                            <h5>Eco-Friendly Travel</h5>
-                            <p>Focus on sustainable and responsible tourism practices.</p>
-                        </div>
-                    </div>
-                    <div class="benefit-item">
-                        <div class="benefit-icon">
-                            <i class="fas fa-globe"></i>
-                        </div>
-                        <div>
-                            <h5>Seamless Experience</h5>
-                            <p>End-to-end travel support, including accommodations, transport, and activities.</p>
-                        </div>
-                    </div>
-                    <div class="benefit-item">
-                        <div class="benefit-icon">
-                            <i class="fas fa-heart"></i>
-                        </div>
-                        <div>
-                            <h5>Memorable Experiences</h5>
-                            <p>We create unique, personalized experiences that turn your travels into lifelong memories.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-title">
+          <h2>Why<span style="color: #ff6b35"> Choose </span> Syolo?</h2>
+          <p>
+            Experience the difference with our premium travel services and
+            unmatched customer care
+          </p>
         </div>
-    </section> 
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="benefit-item">
+              <div class="benefit-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <div>
+                <h5>Safe & Secure</h5>
+                <p>
+                  Your safety is our priority with comprehensive travel
+                  insurance and secure booking systems.
+                </p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon">
+                <i class="fas fa-dollar-sign"></i>
+              </div>
+              <div>
+                <h5>Affordable Packages</h5>
+                <p>
+                  We offer competitive prices and will match any lower price you
+                  find elsewhere.
+                </p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <div>
+                <h5>Expert Guidance</h5>
+                <p>
+                  Our experienced travel consultants provide personalized
+                  recommendations and insider tips.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="benefit-item">
+              <div class="benefit-icon">
+                <i class="fas fa-leaf"></i>
+              </div>
+              <div>
+                <h5>Eco-Friendly Travel</h5>
+                <p>Focus on sustainable and responsible tourism practices.</p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon">
+                <i class="fas fa-globe"></i>
+              </div>
+              <div>
+                <h5>Seamless Experience</h5>
+                <p>
+                  End-to-end travel support, including accommodations,
+                  transport, and activities.
+                </p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon">
+                <i class="fas fa-heart"></i>
+              </div>
+              <div>
+                <h5>Memorable Experiences</h5>
+                <p>
+                  We create unique, personalized experiences that turn your
+                  travels into lifelong memories.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Top Destinations -->
     <section id="destinations" class="section-padding">
-        <div class="container">
-            <div class="section-title">
-                <h2>Explore <span style="color: #FF6B35;">International</span> Tour</h2>
-                <p>Discover our most popular travel destinations around the world</p>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="destination-card">
-                        <img src="images/almaty.png" alt="Almaty">
-                        <div class="destination-overlay">
-                            <h4>Almaty Tour</h4>
-                            <p>The City of Light awaits with its romantic charm, world-class museums, and iconic landmarks.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="destination-card">
-                        <img src="images/baku.png" alt="Baku">
-                        <div class="destination-overlay">
-                            <h4>Baku Tour</h4>
-                            <p>Experience the perfect blend of ancient traditions and cutting-edge technology in Japan's capital.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="destination-card">
-                        <img src="images/bali.jpg" alt="Bali">
-                        <div class="destination-overlay">
-                            <h4>Bali Tour</h4>
-                            <p>Tropical paradise with stunning beaches, lush rice terraces, and rich cultural heritage.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="destination-card">
-                        <img src="images/dubai1.jpg" alt="Dubai">
-                        <div class="destination-overlay">
-                            <h4>Dubai Tour</h4>
-                            <p>The city that never sleeps offers endless entertainment, world-class dining, and iconic sights.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="destination-card">
-                        <img src="images/maldivas4.jpg" alt="Maldives">
-                        <div class="destination-overlay">
-                            <h4>Maldives</h4>
-                            <p>Breathtaking sunsets, white-washed buildings, and crystal-clear waters in the Aegean Sea.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="destination-card">
-                        <img src="images/singapore.jpg" alt="singapore">
-                        <div class="destination-overlay">
-                            <h4>Singapore</h4>
-                            <p>Luxury shopping, ultramodern architecture, and desert adventures in this Middle Eastern gem.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-title">
+          <h2>
+            Explore <span style="color: #ff6b35">International</span> Tour
+          </h2>
+          <p>Discover our most popular travel destinations around the world</p>
         </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="destination-card">
+              <img src="images/almaty.png" alt="Almaty" />
+              <div class="destination-overlay">
+                <h4>Almaty Tour</h4>
+                <p>
+                  The City of Light awaits with its romantic charm, world-class
+                  museums, and iconic landmarks.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="destination-card">
+              <img src="images/baku.png" alt="Baku" />
+              <div class="destination-overlay">
+                <h4>Baku Tour</h4>
+                <p>
+                  Experience the perfect blend of ancient traditions and
+                  cutting-edge technology in Japan's capital.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="destination-card">
+              <img src="images/bali.jpg" alt="Bali" />
+              <div class="destination-overlay">
+                <h4>Bali Tour</h4>
+                <p>
+                  Tropical paradise with stunning beaches, lush rice terraces,
+                  and rich cultural heritage.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="destination-card">
+              <img src="images/dubai1.jpg" alt="Dubai" />
+              <div class="destination-overlay">
+                <h4>Dubai Tour</h4>
+                <p>
+                  The city that never sleeps offers endless entertainment,
+                  world-class dining, and iconic sights.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="destination-card">
+              <img src="images/maldivas4.jpg" alt="Maldives" />
+              <div class="destination-overlay">
+                <h4>Maldives</h4>
+                <p>
+                  Breathtaking sunsets, white-washed buildings, and
+                  crystal-clear waters in the Aegean Sea.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="destination-card">
+              <img src="images/singapore.jpg" alt="singapore" />
+              <div class="destination-overlay">
+                <h4>Singapore</h4>
+                <p>
+                  Luxury shopping, ultramodern architecture, and desert
+                  adventures in this Middle Eastern gem.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- corporate travel -->
+    <section id="corporate" class="corporate section-padding">
+      <div class="container">
+        <div class="section-title">
+          <h2><span style="color: #ff6b35">Corporate</span> Travel</h2>
+          <p>
+            We offers corporate travel solutions designed to meet the unique
+            needs of businesses and professionals
+          </p>
+        </div>
+        <div class="row align-items-center">
+          <div class="carousel-container"> 
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <img
+                  src="images/corporateTravel/Board-Meeting.jpeg"
+                  alt="Board-Meeting"
+                />
+                <h3>Board Meeting</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <div class="item">
+                <img
+                  src="images/corporateTravel/corporate-event.jpeg"
+                  alt="Event"
+                />
+                <h3>Corporate Event Organizer</h3>
+                <p>
+                  Sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua.
+                </p>
+              </div>
+              <div class="item">
+                <img
+                  src="images/corporateTravel/Corporateorganizer.jpg"
+                  alt="Organizer"
+                />
+                <h3>Business Trips</h3>
+                <p>
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                </p>
+              </div>
+              <div class="item">
+                <img
+                  src="images/corporateTravel/doctormeet.jpg"
+                  alt="Doctors Meet"
+                />
+                <h3>Doctors Meet Organizer</h3>
+                <p>
+                  Duis aute irure dolor in reprehenderit in voluptate velit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hotels section -->
+    <section id="hotel" class="hotel section-padding">
+      <div class="container">
+        <div class="section-title">
+          <h2><span style="color: #ff6b35">Popular</span> Hotels</h2>
+          <p>From luxurious resorts to budget-friendly stays</p>
+        </div>
+        <div class="row align-items-center">
+          <!-- card 1 -->
+          <div class="col-sm-6 col-md-4">
+            <div class="tour-card mb-5">
+              <img src="images/hotels/bali.jpg" alt="bali hotel" />
+              <div class="hotel-tag">Ramada by Wyndham</div>
+              <div class="card-body">
+                <h5 class="card-title">Adventure</h5>
+                <p class="card-text">
+                  Embark on a thrilling journey through breathtaking mountain
+                  landscapes.
+                </p>
+                <!-- <a href="#" class="btn btn-primary">Book Now</a> -->
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-sm-6 col-md-4">
+            <div class="tour-card mb-5">
+              <img src="images/hotels/dubai.jpg" alt="dubai hotel" />
+              <div class="hotel-tag">Ramada by Wyndham</div>
+              <div class="card-body">
+                <h5 class="card-title">Beach Getaway</h5>
+                <p class="card-text">
+                  Relax and unwind on pristine beaches with crystal-clear
+                  waters.
+                </p>
+                <!-- <a href="#" class="btn btn-primary">Book Now</a> -->
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-sm-6 col-md-4">
+            <div class="tour-card mb-5">
+              <img src="images/hotels/goa.jpg" alt="goa hotel" />
+              <div class="hotel-tag">Grand Vatika Resort</div>
+              <div class="card-body">
+                <h5 class="card-title">City Explorer</h5>
+                <p class="card-text">
+                  Discover vibrant city life with guided tours through iconic
+                  landmarks.
+                </p>
+                <!-- <a href="#" class="btn btn-primary">Book Now</a> -->
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-sm-6 col-md-4">
+            <div class="tour-card mb-5">
+              <img src="images/hotels/kashmir.jpg" alt="kashmir hotel" />
+              <div class="hotel-tag">Asian Park Hotel</div>
+              <div class="card-body">
+                <h5 class="card-title">Wildlife Safari</h5>
+                <p class="card-text">
+                  Experience the thrill of spotting exotic wildlife in their
+                  natural habitat.
+                </p>
+                <!-- <a href="#" class="btn btn-primary">Book Now</a> -->
+              </div>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="col-sm-6 col-md-4">
+            <div class="tour-card mb-5">
+              <img src="images/hotels/pattaya.jpg" alt="pattaya hotel" />
+              <div class="hotel-tag">Centara Hotel</div>
+              <div class="card-body">
+                <h5 class="card-title">Cultural Journey</h5>
+                <p class="card-text">
+                  Immerse yourself in rich traditions and local cultures.
+                </p>
+                <!-- <a href="#" class="btn btn-primary">Book Now</a> -->
+              </div>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="col-sm-6 col-md-4">
+            <div class="tour-card mb-5">
+              <img src="images/hotels/singapore.jpg" alt="singapore hotel" />
+              <div class="hotel-tag">Orchard Hotel</div>
+              <div class="card-body">
+                <h5 class="card-title">Desert Expedition</h5>
+                <p class="card-text">
+                  Explore the vast deserts and uncover their hidden wonders.
+                </p>
+                <!-- <a href="#" class="btn btn-primary">Book Now</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- About Us -->
-     <section id="about" class="about section-padding">
-        <div class="container">
-            <div class="section-title">
-                <h2>About <span style="color: #FF6B35;">Syolo</span> Travel</h2>
-                <p>We are very trusted tour and travel agency, Standing UP for you all</p>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <img src="images/10476.jpg" alt="About Us" class="img-fluid mb-3 rounded">
-                </div>
-                <div class="col-lg-6">
-                    <div class="about-text">
-                        <!-- <h3>About Syolo Travel</h3> -->
-                        <h2 class="fw-semibold me-5">Your Trusted Travel Partner Since 2014</h2>
-                        <p>With over a decade of experience in the travel industry, Syolo Travel has been helping adventurers explore the world with confidence and comfort. Our passion for travel and commitment to excellence has made us a trusted name in the industry.</p>
-                        <p>We believe that travel is not just about visiting new places, but about creating meaningful connections, discovering new cultures, and making memories that last a lifetime. Our team of experienced travel professionals works tirelessly to ensure every journey is extraordinary.</p>
-                        <div class="row mt-4 text-center">
-                            <div class="col-4 text-center">
-                                <h4 class="fw-semibold" style="color: #FF6B35;">3500+</h4>
-                                <p>Travellers/Month</p>
-                            </div>
-                            <div class="col-4">
-                                <h4 class="fw-semibold" style="color: #ff6b35;">15K+</h4>
-                                <p>Trips</p>
-                            </div>
-                            <div class="col-4 text-center">
-                                <h4 class="fw-semibold" style="color: #FF6B35;">500+</h4>
-                                <p>World wide Destinations</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section id="about" class="about section-padding">
+      <div class="container">
+        <div class="section-title">
+          <h2>About <span style="color: #ff6b35">Syolo</span> Travel</h2>
+          <p>
+            We are very trusted tour and travel agency, Standing UP for you all
+          </p>
         </div>
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <img
+              src="images/10476.jpg"
+              alt="About Us"
+              class="img-fluid mb-3 rounded"
+            />
+          </div>
+          <div class="col-lg-6">
+            <div class="about-text">
+              <!-- <h3>About Syolo Travel</h3> -->
+              <h2 class="fw-semibold me-5">
+                Your Trusted Travel Partner Since 2014
+              </h2>
+              <p>
+                With over a decade of experience in the travel industry, Syolo
+                Travel has been helping adventurers explore the world with
+                confidence and comfort. Our passion for travel and commitment to
+                excellence has made us a trusted name in the industry.
+              </p>
+              <p>
+                We believe that travel is not just about visiting new places,
+                but about creating meaningful connections, discovering new
+                cultures, and making memories that last a lifetime. Our team of
+                experienced travel professionals works tirelessly to ensure
+                every journey is extraordinary.
+              </p>
+              <div class="row mt-4 text-center">
+                <div class="col-4 text-center">
+                  <h4 class="fw-semibold" style="color: #ff6b35">3500+</h4>
+                  <p>Travellers/Month</p>
+                </div>
+                <div class="col-4">
+                  <h4 class="fw-semibold" style="color: #ff6b35">15K+</h4>
+                  <p>Trips</p>
+                </div>
+                <div class="col-4 text-center">
+                  <h4 class="fw-semibold" style="color: #ff6b35">500+</h4>
+                  <p>World wide Destinations</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Testimonials -->
     <section id="testimonials" class="testimonials section-padding">
-        <div class="container">
-            <div class="section-title">
-                <h2>What Our <span style="color: #FF6B35;">Travelers</span> Say</h2>
-                <p>Read testimonials from our satisfied customers who have experienced unforgettable journeys with us</p>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="testimonial-card">
-                        <div class="testimonial-avatar">
-                            <img src="images/portrait-white-man-isolated.jpg" alt="Sarah Johnson">
-                        </div>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p>"Syolo made our honeymoon in Bali absolutely perfect! Every detail was taken care of, and we had the most romantic and relaxing vacation ever."</p>
-                        <h5>Chris Woakes</h5>
-                        <small>Newlywed Traveler</small>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="testimonial-card">
-                        <div class="testimonial-avatar">
-                            <img src="images/cheerful-young-man-posing-isolated-grey.jpg" alt="Michael Chen">
-                        </div>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p>"The Singapore tour was incredible! The cultural experiences and attention to detail exceeded all expectations. I can't wait to book my next adventure!"</p>
-                        <h5>Michael Chen</h5>
-                        <small>Adventure Seeker</small>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="testimonial-card">
-                        <div class="testimonial-avatar">
-                            <img src="images/close-up-young-caucasian-guy-with-beard-smiling-looking-happy-camera-standing-blue-background.jpg" alt="Emily Rodriguez">
-                        </div>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p>"Family vacation to Dubai was seamless thanks to Syolo. The kids loved every moment, and we parents could actually relax and enjoy!"</p>
-                        <h5>Emily Rodriguez</h5>
-                        <small>Family Traveler</small>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-title">
+          <h2>What Our <span style="color: #ff6b35">Travelers</span> Say</h2>
+          <p>
+            Read testimonials from our satisfied customers who have experienced
+            unforgettable journeys with us
+          </p>
         </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card">
+              <div class="testimonial-avatar">
+                <img
+                  src="images/portrait-white-man-isolated.jpg"
+                  alt="Sarah Johnson"
+                />
+              </div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>
+                "Syolo made our honeymoon in Bali perfect! Every
+                detail was taken care of, and we had the most romantic and
+                relaxing vacation ever."
+              </p>
+              <h5>Chris Woakes</h5>
+              <small>Newlywed Traveler</small>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card">
+              <div class="testimonial-avatar">
+                <img
+                  src="images/cheerful-young-man-posing-isolated-grey.jpg"
+                  alt="Michael Chen"
+                />
+              </div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>
+                "The Singapore tour was incredible! The cultural experiences and
+                attention to detail exceeded all expectations. I can't wait to
+                book my next adventure!"
+              </p>
+              <h5>Michael Chen</h5>
+              <small>Adventure Seeker</small>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card">
+              <div class="testimonial-avatar">
+                <img
+                  src="images/close-up-young-caucasian-guy-with-beard-smiling-looking-happy-camera-standing-blue-background.jpg"
+                  alt="Emily Rodriguez"
+                />
+              </div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>
+                "Family vacation to Dubai was seamless thanks to Syolo. The kids
+                loved every moment, and we parents could actually relax and
+                enjoy!"
+              </p>
+              <h5>Emily Rodriguez</h5>
+              <small>Family Traveler</small>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Clients Section -->
-     <section class="partners-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Trusted by <span style="color: #FF6B35;">Leading</span> Organizations</h2>
-                <p>We're proud to partner with industry leaders to deliver exceptional travel experiences worldwide</p>
-            </div>
-            
-            <div class="row align-items-center justify-content-center">
-                <!-- Partner 1 -->
-                 <div class="col-lg-2 col-md-3 col-6">
-                    <div class="partner-logo-container">
-                        <img src="images/partner/itoa.jpg" alt="ITOA" class="partner-logo">
-                    </div>
-                </div> 
-                
-                <!-- Partner 2 -->
-                <div class="col-lg-2 col-md-3 col-6">
-                    <div class="partner-logo-container">
-                        <img src="images/partner/lyptus.jpg" alt="Lyptus" class="partner-logo">
-                    </div>
-                </div>
-                
-                <!-- Partner 3 -->
-                <div class="col-lg-2 col-md-3 col-6">
-                    <div class="partner-logo-container">
-                        <img src="images/partner/morph.jpg" alt="Morph" class="partner-logo">
-                    </div>
-                </div>
-                
-                <!-- Partner 4 -->
-                <div class="col-lg-2 col-md-3 col-6">
-                    <div class="partner-logo-container">
-                        <img src="images/partner/myPartner.jpg" alt="MyPartner" class="partner-logo">
-                    </div>
-                </div>
-                
-                <!-- Partner 5 -->
-                <div class="col-lg-2 col-md-3 col-6">
-                    <div class="partner-logo-container">
-                        <img src="images/partner/rachanaSagar.jpg" alt="Rachana Sagar" class="partner-logo">
-                    </div>
-                </div>
-                
-                <!-- Partner 6 -->
-                <div class="col-lg-2 col-md-3 col-6">
-                    <div class="partner-logo-container">
-                        <img src="images/partner/tata.jpg" alt="Tata Group" class="partner-logo">
-                    </div>
-                </div>
-            </div>
+    <section class="partners-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>
+            Trusted by <span style="color: #ff6b35">Leading</span> Organizations
+          </h2>
+          <p>
+            We're proud to partner with industry leaders to deliver exceptional
+            travel experiences worldwide
+          </p>
         </div>
-    </section> 
+
+        <div class="row align-items-center justify-content-center">
+          <!-- Partner 1 -->
+          <div class="col-lg-2 col-md-3 col-6">
+            <div class="partner-logo-container">
+              <img
+                src="images/partner/itoa.jpg"
+                alt="ITOA"
+                class="partner-logo"
+              />
+            </div>
+          </div>
+
+          <!-- Partner 2 -->
+          <div class="col-lg-2 col-md-3 col-6">
+            <div class="partner-logo-container">
+              <img
+                src="images/partner/lyptus.jpg"
+                alt="Lyptus"
+                class="partner-logo"
+              />
+            </div>
+          </div>
+
+          <!-- Partner 3 -->
+          <div class="col-lg-2 col-md-3 col-6">
+            <div class="partner-logo-container">
+              <img
+                src="images/partner/morph.jpg"
+                alt="Morph"
+                class="partner-logo"
+              />
+            </div>
+          </div>
+
+          <!-- Partner 4 -->
+          <div class="col-lg-2 col-md-3 col-6">
+            <div class="partner-logo-container">
+              <img
+                src="images/partner/myPartner.jpg"
+                alt="MyPartner"
+                class="partner-logo"
+              />
+            </div>
+          </div>
+
+          <!-- Partner 5 -->
+          <div class="col-lg-2 col-md-3 col-6">
+            <div class="partner-logo-container">
+              <img
+                src="images/partner/rachanaSagar.jpg"
+                alt="Rachana Sagar"
+                class="partner-logo"
+              />
+            </div>
+          </div>
+
+          <!-- Partner 6 -->
+          <div class="col-lg-2 col-md-3 col-6">
+            <div class="partner-logo-container">
+              <img
+                src="images/partner/tata.jpg"
+                alt="Tata Group"
+                class="partner-logo"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact section-padding">
-        <div class="container">
-            <div class="section-title">
-                <h2 style="color: white;">Get in <span style="color: #FF6B35;">Touch</span></h2>
-                <p style="color: #ccc;">Ready to start your next adventure? Contact us today and let's plan your perfect getaway</p>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div>
-                                <h5>Address</h5>
-                                <p>OC-419, Gaur City Center, Greater Noida West, UP.</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div>
-                                <h5>Phone</h5>
-                                <p>+91 9717324015</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div>
-                                <h5>Email</h5>
-                                <p>info@syolotravel.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <div>
-                                <h5>Business Hours</h5>
-                                <p>Mon - Fri: 9:30 AM - 6:30 PM</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <form>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Your Name" required>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="email" class="form-control" placeholder="Your Email" required>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <input type="number" class="form-control" placeholder="Phone no" required>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="date" class="form-control" placeholder="Date" required>
-                            </div>
-                        </div>
-                        <!-- <input type="text" class="form-control" placeholder="Subject" required> -->
-                        <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-title">
+          <h2 style="color: white">
+            Get in <span style="color: #ff6b35">Touch</span>
+          </h2>
+          <p style="color: #ccc">
+            Ready to start your next adventure? Contact us today and let's plan
+            your perfect getaway
+          </p>
         </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <h5>Address</h5>
+                  <p>OC-419, Gaur City Center, Greater Noida West, UP.</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div>
+                  <h5>Phone</h5>
+                  <p>+91 9717324015</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <h5>Email</h5>
+                  <p>info@syolotravel.com</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div>
+                  <h5>Business Hours</h5>
+                  <p>Mon - Fri: 9:30 AM - 6:30 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <form>
+              <div class="row">
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder="Phone no"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="date"
+                    class="form-control"
+                    placeholder="Date"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="row">
+                            <div class="col-md-12">
+                                <div class="select-container">
+                                    <select name="tourSelection" id="tourSelection" class="form-control hidden">
+                                        <option value="Domestic">Domestic Travel</option>
+                                        <option value="International" selected>International Travel</option>
+                                        <option value="Corporate">Corporate Travel</option>
+                                        <option value="Interest">Travel By Interest</option>
+                                    </select>
+                                    <div class="form-control" id="customSelect">International Travel</div>
+                                    <button class="arrow-button" id="downBtn">▼</button>
+                                    <button class="arrow-button hidden" id="upBtn">▲</button>
+                                    <div class="dropdown-menu" id="dropdownMenu">
+                                    <!-- Populated by JavaScript -->
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+              <!-- <input type="text" class="form-control" placeholder="Subject" required> -->
+              <textarea
+                class="form-control"
+                rows="5"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Footer --> 
+    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <!-- <div class="row mb-5">
+      <div class="container">
+        <!-- <div class="row mb-5">
                 <div class="col-md-3 col-sm-6 text-start mb-2">
                     <h5 style="color: #FF6B35;">International Tour</h5>
                     <p>Bali Tour</p>
@@ -691,47 +1136,147 @@
                     <p>Business Trips</p>
                 </div>
             </div> -->
-            <div class="row">
-                <div class="col-md-6">
-                    <p style="color: #ccc;">&copy;2025 Syolo Travel All rights reserved.</p>
-                </div>
-                <div class="col-md-6">
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
+        <div class="row">
+          <div class="col-md-6">
+            <p style="color: #ccc">
+              &copy;2025 Syolo Travel All rights reserved.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
             </div>
+          </div>
         </div>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
             });
+          }
         });
+      });
 
-        // Navbar background change on scroll
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+      // Navbar background change on scroll
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+          navbar.style.background = "rgba(255, 255, 255, 0.95)";
+        } else {
+          navbar.style.background = "var(--white)";
+        }
+      });
+    </script>
+
+    <!-- swipe carousal -->
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 20,
+          nav: true,
+          dots: true,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          autoplayHoverPause: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 2,
+            },
+            1000: {
+              items: 3,
+            },
+          },
+        });
+      });
+    </script>
+
+
+
+    <script>
+        const select = document.getElementById('tourSelection');
+        const customSelect = document.getElementById('customSelect');
+        const downBtn = document.getElementById('downBtn');
+        const upBtn = document.getElementById('upBtn');
+        const dropdownMenu = document.getElementById('dropdownMenu');
+
+        // Populate dropdown menu
+        function populateDropdown() {
+            dropdownMenu.innerHTML = '';
+            Array.from(select.options).forEach((option, index) => {
+                const div = document.createElement('div');
+                div.className = 'dropdown-item';
+                div.textContent = option.text;
+                div.dataset.value = option.value;
+                if (option.selected) {
+                    div.classList.add('selected');
+                }
+                div.addEventListener('click', () => {
+                    select.selectedIndex = index;
+                    customSelect.textContent = option.text;
+                    dropdownMenu.style.display = 'none';
+                    upBtn.classList.add('hidden');
+                    downBtn.classList.remove('hidden');
+                    select.dispatchEvent(new Event('change'));
+                    document.querySelectorAll('.dropdown-item').forEach(item => item.classList.remove('selected'));
+                    div.classList.add('selected');
+                });
+                dropdownMenu.appendChild(div);
+            });
+        }
+
+        // Toggle dropdown and buttons
+        function toggleDropdown() {
+            const isOpen = dropdownMenu.style.display === 'block';
+            dropdownMenu.style.display = isOpen ? 'none' : 'block';
+            if (isOpen) {
+                upBtn.classList.add('hidden');
+                downBtn.classList.remove('hidden');
             } else {
-                navbar.style.background = 'var(--white)';
+                downBtn.classList.add('hidden');
+                upBtn.classList.remove('hidden');
+            }
+        }
+
+        // Initialize
+        populateDropdown();
+        customSelect.textContent = select.options[select.selectedIndex].text;
+
+        // Event listeners
+        downBtn.addEventListener('click', toggleDropdown);
+        upBtn.addEventListener('click', toggleDropdown);
+        customSelect.addEventListener('click', toggleDropdown);
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.select-container')) {
+                dropdownMenu.style.display = 'none';
+                upBtn.classList.add('hidden');
+                downBtn.classList.remove('hidden');
             }
         });
     </script>
-</body>
+
+  </body>
 </html>
